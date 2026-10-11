@@ -24,6 +24,36 @@ python analysis.py
 ## Results
 Results are written to `results.json` (and a chart to `figures/`).
 
+## Results (latest run)
+
+On the PhysioNet gaitndd dataset, a criticality-only logistic regression reached ROC-AUC 0.77 on a 19-subject test split, versus 0.85 for a tuned tree model adding gait statistics; the gain was small and held in only 70% of 20 repeated splits.
+
+| Metric | Value |
+|---|---|
+| baseline_score | 0.7667 |
+| baseline_score_std | 0.04714 |
+| baseline_balanced_accuracy | 0.7238 |
+| baseline_f1 | 0.7843 |
+| baseline_repeated_auc_mean | 0.7843 |
+| baseline_repeated_auc_std | 0.07914 |
+| baseline_repeated_balacc_mean | 0.7068 |
+| baseline_repeated_f1_mean | 0.7751 |
+| improved_score | 0.8524 |
+| improved_score_std | 0.0526 |
+| improved_balanced_accuracy | 0.8167 |
+| improved_f1 | 0.8746 |
+| improved_repeated_auc_mean | 0.8629 |
+| improved_repeated_auc_std | 0.07248 |
+| improved_repeated_balacc_mean | 0.7232 |
+| improved_repeated_f1_mean | 0.8706 |
+| improvement | 0.08571 |
+| improvement_repeated_auc | 0.07857 |
+| repeated_fraction_splits_improved_better | 0.7 |
+
+Run on 2026-10-11. Full output: [results.json](results.json) · [run.log](run.log)
+
+Notes: Stand-in dataset (neurodegenerative gait, not metabolic disorders); pathological = ALS/Huntington/Parkinson pooled. Only 63 subjects, so test sets are ~19 subjects and scores are noisy; the repeated-split metrics are supplementary and use model seed 42 only. Baseline LR is deterministic so its seed std reflects only inner-CV fold shuffling. Model families chosen on primary split by seed: ['RandomForestClassifier', 'RandomForestClassifier', 'LGBMClassifier']. Criticality features are simple estimators computed on the mean of left/right stride intervals after crude outlier removal.
+
 ## Reference
 
 This project is motivated by the following paper:
