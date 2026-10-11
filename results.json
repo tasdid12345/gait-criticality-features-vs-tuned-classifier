@@ -1,0 +1,39 @@
+{
+  "question": "Can a tuned gradient-boosting classifier on criticality plus standard gait-variability features beat a criticality-only classifier at separating healthy from pathological gait in stride-interval recordings?",
+  "method": "Per-recording stride series -> criticality features (DFA, Hurst, sample entropy, lag-1 ACF, power-law tail exponent) and gait statistics. Headline: one stratified 70/30 subject-level split (seed 42), models run with seeds 42-44; supplementary: 20 repeated stratified 70/30 splits. Both models tuned by 3-fold inner CV on the training split only; test set used once.",
+  "dataset": {
+    "name": "PhysioNet Gait in Neurodegenerative Disease (gaitndd)",
+    "source_url": "https://physionet.org/content/gaitndd/1.0.0/",
+    "n_rows": 63,
+    "n_train": 44,
+    "n_test": 19,
+    "same_as_paper": false,
+    "baseline_is_papers_method": false
+  },
+  "metric_name": "ROC-AUC",
+  "higher_is_better": true,
+  "baseline": "Logistic regression (C tuned by inner CV) on the five criticality-style features only (stand-in for the paper's undisclosed criticality method).",
+  "improved": "Criticality features plus gait statistics (mean, CV, swing/stance/double-support ratios, L-R asymmetry), with a random forest or LightGBM chosen/tuned by inner CV.",
+  "metrics": {
+    "baseline_score": 0.7666666666666666,
+    "baseline_score_std": 0.047140452079103216,
+    "baseline_balanced_accuracy": 0.7238095238095238,
+    "baseline_f1": 0.7842650103519668,
+    "baseline_repeated_auc_mean": 0.7842857142857145,
+    "baseline_repeated_auc_std": 0.07914079419694023,
+    "baseline_repeated_balacc_mean": 0.7067857142857144,
+    "baseline_repeated_f1_mean": 0.775140373758065,
+    "improved_score": 0.8523809523809524,
+    "improved_score_std": 0.05259695722470119,
+    "improved_balanced_accuracy": 0.8166666666666668,
+    "improved_f1": 0.8746438746438746,
+    "improved_repeated_auc_mean": 0.862857142857143,
+    "improved_repeated_auc_std": 0.07247800510837613,
+    "improved_repeated_balacc_mean": 0.7232142857142857,
+    "improved_repeated_f1_mean": 0.8706049317448095,
+    "improvement": 0.08571428571428574,
+    "improvement_repeated_auc": 0.07857142857142851,
+    "repeated_fraction_splits_improved_better": 0.7
+  },
+  "notes": "Stand-in dataset (neurodegenerative gait, not metabolic disorders); pathological = ALS/Huntington/Parkinson pooled. Only 63 subjects, so test sets are ~19 subjects and scores are noisy; the repeated-split metrics are supplementary and use model seed 42 only. Baseline LR is deterministic so its seed std reflects only inner-CV fold shuffling. Model families chosen on primary split by seed: ['RandomForestClassifier', 'RandomForestClassifier', 'LGBMClassifier']. Criticality features are simple estimators computed on the mean of left/right stride intervals after crude outlier removal."
+}

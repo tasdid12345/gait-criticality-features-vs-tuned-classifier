@@ -1,0 +1,121 @@
+Collecting requests (from -r requirements.txt (line 1))
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting pandas (from -r requirements.txt (line 2))
+  Downloading pandas-3.0.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Collecting numpy (from -r requirements.txt (line 3))
+  Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting scipy (from -r requirements.txt (line 4))
+  Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting matplotlib (from -r requirements.txt (line 5))
+  Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting scikit-learn (from -r requirements.txt (line 6))
+  Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Collecting lightgbm (from -r requirements.txt (line 7))
+  Downloading lightgbm-4.7.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (18 kB)
+Collecting joblib (from -r requirements.txt (line 8))
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 1))
+  Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 1))
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->-r requirements.txt (line 1))
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->-r requirements.txt (line 1))
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 2))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->-r requirements.txt (line 5))
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 5))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib->-r requirements.txt (line 5))
+  Downloading fonttools-4.66.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (130 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->-r requirements.txt (line 5))
+  Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting packaging>=20.0 (from matplotlib->-r requirements.txt (line 5))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=9 (from matplotlib->-r requirements.txt (line 5))
+  Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib->-r requirements.txt (line 5))
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn->-r requirements.txt (line 6))
+  Downloading narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn->-r requirements.txt (line 6))
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Collecting cloudpickle>=3.0 (from joblib->-r requirements.txt (line 8))
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 2))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading pandas-3.0.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (11.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 13.5 MB/s  0:00:00
+Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 12.6 MB/s  0:00:01
+Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 25.9 MB/s  0:00:01
+Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 71.1 MB/s  0:00:00
+Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 87.2 MB/s  0:00:00
+Downloading lightgbm-4.7.0-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 81.4 MB/s  0:00:00
+Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.66.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 91.2 MB/s  0:00:00
+Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 89.7 MB/s  0:00:00
+Downloading narwhals-2.27.1-py3-none-any.whl (483 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 81.2 MB/s  0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Installing collected packages: urllib3, threadpoolctl, six, pyparsing, pillow, packaging, numpy, narwhals, kiwisolver, idna, fonttools, cycler, cloudpickle, charset_normalizer, certifi, scipy, requests, python-dateutil, joblib, contourpy, scikit-learn, pandas, matplotlib, lightgbm
+
+Successfully installed certifi-2026.7.22 charset_normalizer-3.5.2 cloudpickle-3.1.2 contourpy-1.3.3 cycler-0.12.1 fonttools-4.66.1 idna-3.20 joblib-1.6.0 kiwisolver-1.5.1 lightgbm-4.7.0 matplotlib-3.11.2 narwhals-2.27.1 numpy-2.4.6 packaging-26.3 pandas-3.0.6 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 requests-2.34.2 scikit-learn-1.9.1 scipy-1.17.1 six-1.17.0 threadpoolctl-3.7.0 urllib3-2.8.0
+/home/runner/work/gait-criticality-features-vs-tuned-classifier/gait-criticality-features-vs-tuned-classifier/analysis.py:41: RuntimeWarning: divide by zero encountered in log10
+  sc = np.unique(np.logspace(np.log10(4), np.log10(len(x) // 4), 12).astype(int))
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/numpy/_core/function_base.py:163: RuntimeWarning: invalid value encountered in multiply
+  y *= step
+/home/runner/work/gait-criticality-features-vs-tuned-classifier/gait-criticality-features-vs-tuned-classifier/analysis.py:41: RuntimeWarning: invalid value encountered in cast
+  sc = np.unique(np.logspace(np.log10(4), np.log10(len(x) // 4), 12).astype(int))
+/home/runner/work/gait-criticality-features-vs-tuned-classifier/gait-criticality-features-vs-tuned-classifier/analysis.py:44: RuntimeWarning: overflow encountered in scalar multiply
+  seg = y[: len(y) // s * s].reshape(-1, s); t = np.arange(s)
+skip hunt20 can only specify one unknown dimension
+recordings loaded: 63 | pathological: 47
+primary split done; improved chose: ['RandomForestClassifier', 'RandomForestClassifier', 'LGBMClassifier']
+repeated splits 5/20
+repeated splits 10/20
+repeated splits 15/20
+repeated splits 20/20
+{
+  "baseline_score": 0.7666666666666666,
+  "baseline_score_std": 0.047140452079103216,
+  "baseline_balanced_accuracy": 0.7238095238095238,
+  "baseline_f1": 0.7842650103519668,
+  "baseline_repeated_auc_mean": 0.7842857142857145,
+  "baseline_repeated_auc_std": 0.07914079419694023,
+  "baseline_repeated_balacc_mean": 0.7067857142857144,
+  "baseline_repeated_f1_mean": 0.775140373758065,
+  "improved_score": 0.8523809523809524,
+  "improved_score_std": 0.05259695722470119,
+  "improved_balanced_accuracy": 0.8166666666666668,
+  "improved_f1": 0.8746438746438746,
+  "improved_repeated_auc_mean": 0.862857142857143,
+  "improved_repeated_auc_std": 0.07247800510837613,
+  "improved_repeated_balacc_mean": 0.7232142857142857,
+  "improved_repeated_f1_mean": 0.8706049317448095,
+  "improvement": 0.08571428571428574,
+  "improvement_repeated_auc": 0.07857142857142851,
+  "repeated_fraction_splits_improved_better": 0.7
+}
+wrote results.json
